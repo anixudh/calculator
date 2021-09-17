@@ -93,6 +93,14 @@ const equalsClicked=e=>{
     symb="";
 }
 
+const backspClicked=e=>{
+  if(b!="") b=b.substr(0,b.length-1);
+  else if(b=="" && symb!="") symb="";
+  else if(a!="") a=a.substr(0,a.length-1);
+
+  text.textContent=a+symb+b;
+}
+
 let a="", b="", op="",symb="";
 const text=document.querySelector(".text-field");
 const numbers=document.querySelectorAll(".numbers");
@@ -110,3 +118,6 @@ reset.addEventListener('click',resetClicked);
 
 const equals=document.querySelector(".equals");
 equals.addEventListener('click',equalsClicked);
+
+const backsp=document.querySelector('.backsp');
+backsp.addEventListener('click',backspClicked);
