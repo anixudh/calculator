@@ -1,0 +1,53 @@
+.container{
+    text-align: center;
+}
+.calculator{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 350px;
+    height: 450px;
+    margin:auto;
+}
+
+.text-field{
+    border: 2px solid rgb(99, 98, 98);
+    background-color: rgb(210, 230, 248);
+    font-size: 30px;
+    justify-content: center;
+    flex:20%
+}
+
+.numbers{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    background-color: grey;
+    border: 2px solid rgb(190, 188, 188);
+    padding: 5px;
+    flex:60%
+}
+
+.operations{
+    background-color: rgb(195, 216, 194);
+    border: 2px solid rgb(99, 98, 98);
+    padding: 3px;
+    flex:20%
+}
+
+.numbers > button{
+    height: 70px;
+    width: 80px;
+}
+
+.mathOp > button{
+    width:80px;
+}
+
+.resOp > button{
+    width:80px;
+}
+
+.zero{
+    justify-self: center;
+}
