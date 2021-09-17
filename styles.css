@@ -1,5 +1,13 @@
+body{
+    background-color: grey;
+}
 .container{
+    
     text-align: center;
+}
+.header{
+    color: lavender;
+    font-family:'Courier', monospace, 'sans-serif';
 }
 .calculator{
     display: flex;
@@ -60,5 +68,5 @@
 
 .gitlink{
     text-decoration: none;
-    color: rgb(88, 84, 84);
+    color: rgb(36, 34, 34);
 }
