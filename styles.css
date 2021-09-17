@@ -42,12 +42,23 @@
 
 .mathOp > button{
     width:80px;
+    height: 35px;
 }
 
 .resOp > button{
     width:80px;
+    height: 35px;
 }
 
 .zero{
     justify-self: center;
+}
+
+.footer{
+    padding: 10px;
+}
+
+.gitlink{
+    text-decoration: none;
+    color: rgb(88, 84, 84);
 }
