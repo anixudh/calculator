@@ -73,7 +73,7 @@ const operationClicked=e=>{
         case "mul": symb="*";break;
         case "div": symb="/";break;
     }
-    text.textContent=text.textContent+symb;
+    text.textContent=a+symb;
 }
 
 const resetClicked=e=>{
@@ -95,7 +95,10 @@ const equalsClicked=e=>{
 
 const backspClicked=e=>{
   if(b!="") b=b.substr(0,b.length-1);
-  else if(b=="" && symb!="") symb="";
+  else if(b=="" && symb!=""){
+    symb="";
+    op=""
+  }
   else if(a!="") a=a.substr(0,a.length-1);
 
   text.textContent=a+symb+b;
